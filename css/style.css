@@ -35,9 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.logo {
-  width: 200px
+.logo-container {
+  width: 200px;
   height: inherit;
+  object-fit: contain;
 }
 
 /* Prelaoder */
@@ -745,11 +746,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 200px;
+  max-height: 200px;
+  max-width: 250px;
   overflow: hidden !important;
   margin-bottom: 15px;
+  object-fit: contain;
   transition: all 350ms ease;
   transform: scale(1);
+}
+
+#portfolio .portfolio-img-container img{
+  max-height: 200px;
+  max-width: 250px;
+  object-fit: contain;
 }
 
 #portfolio .portfolio-item a {
