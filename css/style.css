@@ -1,9 +1,3 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -100,6 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo {
   float: left;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
 }
 
 #header #logo h1 {
@@ -144,14 +141,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
-  background-size: cover;
+  background: url(../img/joelakeunion.jpg) top center;
+  background-size: 100% auto;
   position: relative;
 }
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 
@@ -501,48 +498,48 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Us Section
 --------------------------------*/
-#about {
+#tour {
   background: #fff;
   padding: 80px 0;
 }
 
-#about .about-container .background {
+#tour .tour-container .background {
   min-height: 300px;
   background: url(../img/about-img.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
 
-#about .about-container .content {
+#tour .tour-container .content {
   background: #fff;
 }
 
-#about .about-container .title {
+#tour .tour-container .title {
   color: #333;
   font-weight: 700;
   font-size: 32px;
 }
 
 @media (max-width: 768px) {
-  #about .about-container .title {
+  #tour .tour-container .title {
     padding-top: 15px;
   }
 }
 
-#about .about-container p {
+#tour .tour-container p {
   line-height: 26px;
 }
 
-#about .about-container p:last-child {
+#tour .tour-container p:last-child {
   margin-bottom: 0;
 }
 
-#about .about-container .icon-box {
+#tour .tour-container .icon-box {
   background: #fff;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
-#about .about-container .icon-box .icon {
+#tour .tour-container .icon-box .icon {
   float: left;
   background: #fff;
   padding: 16px;
@@ -550,12 +547,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #2dc997;
 }
 
-#about .about-container .icon-box .icon i {
+#tour .tour-container .icon-box .icon i {
   color: #2dc997;
   font-size: 24px;
 }
 
-#about .about-container .icon-box .title {
+#tour .tour-container .icon-box .title {
   margin-left: 80px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -563,11 +560,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#about .about-container .icon-box .title a {
+#tour .tour-container .icon-box .title a {
   color: #111;
 }
 
-#about .about-container .icon-box .description {
+#tour .tour-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
